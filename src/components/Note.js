@@ -1,6 +1,7 @@
-import NoteItemList from './components/NoteItemList'
+import React  from 'react';
+import NoteItemList from './NoteItemList'
 
-const Note = ({ name, items }) => {
+const Note = ({ name, items }) => 
     <article>
         <header>
             <h1>{name}</h1>
@@ -16,6 +17,6 @@ const Note = ({ name, items }) => {
 
     </article>
 
-}
+Note.displayName = 'Note'
 
 export default Note
