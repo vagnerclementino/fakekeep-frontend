@@ -1,23 +1,17 @@
-const Note = ({name, itens}) => {
+import NoteItemList from './components/NoteItemList'
+
+const Note = ({ name, items }) => {
     <article>
         <header>
             <h1>{name}</h1>
         </header>
 
         <section id="undone-items">
-            <ul>
-                {itens.map((item, i) => 
-                    <li key={i}>{item.description}</li>)
-                }
-            </ul>
+            <NoteItemList items={items.filter(item => item.status === 'undone')} />
         </section>
 
         <section id="done-items">
-            <ul>
-                {itens.map((item, i) => 
-                    <li key={i}>{item.description}</li>)
-                }
-            </ul>
+            <NoteItemList items={items.filter(item => item.status === 'done')} />
         </section>
 
     </article>
