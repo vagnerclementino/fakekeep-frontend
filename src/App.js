@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import data from './mocks/notes'
 import NotePanel from './components/NotePanel'
