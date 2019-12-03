@@ -1,6 +1,6 @@
 import React  from 'react';
 import Note from './Note'
-// import '../stylesheets/NotePanel.css'
+import '../stylesheets/NotePanel.css'
 
 const NotePanel = ({notes}) => 
 <article>
