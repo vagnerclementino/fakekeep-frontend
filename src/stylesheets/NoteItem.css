@@ -1,0 +1,14 @@
+li {
+  font-size: 0.875rem;
+  letter-spacing: 0.01428571em;
+  line-height: 1.25rem;
+  min-height: 24px;
+  padding-bottom: 2px;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+  height: 18px;
+  top: 5px;
+  width: 18px;
+}
